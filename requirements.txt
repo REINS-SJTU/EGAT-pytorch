@@ -1,0 +1,9 @@
+## Dependencies
+- pytorch 2.2.1+cu118
+- pytorch-lightning 2.2.1
+- torch-geometric 2.5.0
+- numpy 1.26.4
+- scipy 1.40.6
+- wandb 0.16.4 (please run `wandb off` to disable the sync to wandb server)
+- torch_scatter 2.1.2+pt22cu118
+- torch_sparse 0.6.18+pt22cu118

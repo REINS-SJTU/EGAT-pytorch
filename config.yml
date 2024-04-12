@@ -1,0 +1,21 @@
+net: amlsim  # amlsim, citation; Indicate which network structure to use
+lr: 0.005  # learning rate
+leaky_slope: 0.2  # slope of LeakyReLU
+dropout: 0.3
+vertex_feature_ratio: 0.5 # \lambda
+vertex_type: egat_split # egat, egat_merge, egat_split, mgcn, mgcn_att, nnconv, nnconv_att; The type of node modules  (only work for amlsim)
+edge_type: mlp # mlp, egat, mgcn; The type of edge modules  (only work for amlsim)
+edge_order: after  # before, after, parallel; The order inside EGAT layer (only work for amlsim)
+dataset: AMLSim-10K-merge-hard-batch     # AMLSim-10K-merge-hard-batch, cora, citeseer, pubmed; The dataset to use
+# dataset: cora
+l2norm: 0.0005  # l2 normalization
+vertex_feature: 128  # dimension of node features
+edge_feature: 128  # dimension of edge features
+layers: 6  # layer number (only work for amlsim)
+predict_hidden: true # whether to use a hidden layer for prediction (only work for amlsim)
+batchnorm_order: post # pre, post, none; The position of batchnorm
+update_method: residual # residual, gru, none; The updating method of node and edge features (only work for amlsim)
+layer_aggregation_method: concat  # last, concat; The merge layer (only work for amlsim)
+heads: 8  # heads of EGAT
+symmetric: true  # whether to use symmetric strategy
+seed: 1170  # random seed for dataset (only work for citation networks)
