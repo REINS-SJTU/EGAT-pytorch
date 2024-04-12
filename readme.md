@@ -1,5 +1,7 @@
 # CodeAppendix
 
+Code for paper "EGAT: Edge-Featured Graph Attention Network"
+
 ## Dependencies
 
 in `requirements.txt`
